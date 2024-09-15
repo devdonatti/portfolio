@@ -8,7 +8,7 @@ const Proyectos = () => {
     >
       <h1
         data-aos="fade-right"
-        className="text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500"
+        className="text-2xl font-semibold mb-8 leading-normal uppercase text-fuchsia-600"
       >
         Proyectos
       </h1>
