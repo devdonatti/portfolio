@@ -3,72 +3,85 @@ import { FaGithub, FaLinkedin, FaVoicemail, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-800 text-white lg:px-48 px-4">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div className="mb-4 md:mb-0">
-          <span className="text-3xl font-semibold text-fuchsia-800 py-2 uppercase">
-            Logo
-          </span>
-          <p className="text-[16px] my-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            minus distinctio quas. Vero illum asperiores distinctio vitae nemo
-            adipisci ut, fugiat maxime possimus reiciendis, quidem perspiciatis
-            odit beatae sed non.
-          </p>
+    <footer className="bg-slate-800 text-white">
+      <div className="container mx-auto lg:px-24 px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Logo */}
+        <div className="mb-4 md:mb-0 flex items-center">
+          <img src="/logo4.png" className="h-24 w-auto" alt="Logo" />
         </div>
+        {/* Servicios */}
         <div>
-          <h2 className="text [22px] font-semibold text-fuchsia-800 py-2 uppercase">
+          <h2 className="text-lg font-semibold text-fuchsia-600 py-2 uppercase">
             Servicios
           </h2>
-          <ul>
-            <li className="my-2">Web developement</li>
-            <li className="my-2">Web Desing</li>
-            <li className="my-2">E-commerce</li>
-            <li className="my-2">SEO</li>
+          <ul className="space-y-2">
+            <li>Desarrollo Web</li>
+            <li>Diseño Web</li>
+            <li>E-commerce</li>
+            <li>SEO</li>
           </ul>
         </div>
-        <div className="mb-4 md:mb-0">
-          <h2 className="text [22px] font-semibold text-fuchsia-800 py-2 uppercase">
+        {/* Contacto */}
+        <div>
+          <h2 className="text-lg font-semibold text-fuchsia-600 py-2 uppercase">
             Contacto
           </h2>
-          <p className="text-[16px] my-4">
-            Email: mdonattiprogramacion@gmail.com{" "}
+          <p className="text-sm my-2">
+            Email:{" "}
+            <a
+              href="mailto:mdonattiprogramacion@gmail.com"
+              className="hover:underline"
+            >
+              mdonattiprogramacion@gmail.com
+            </a>
           </p>
-          <p className="text-[16px] my-4">Telefono: 116460-9581</p>
+          <p className="text-sm my-2">Teléfono: 116460-9581</p>
         </div>
+        {/* Redes Sociales */}
         <div>
-          <h2 className="text [22px] font-semibold text-fuchsia-800 py-2 uppercase">
+          <h2 className="text-lg font-semibold text-fuchsia-600 py-2 uppercase">
             Seguime
           </h2>
-          <div className=" flex space-x-4 ">
+          <div className="flex space-x-4">
             <a
-              className="text-white hover:text-fuchsia-800 transition-all duration-150 ease-in-out"
-              href=""
+              className="text-white hover:text-fuchsia-500 transition-colors duration-300"
+              href="https://github.com/tu-perfil"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
             >
-              <FaGithub />
+              <FaGithub size={24} />
             </a>
             <a
-              className="text-white hover:text-fuchsia-800 transition-all duration-150 ease-in-out"
-              href=""
+              className="text-white hover:text-fuchsia-500 transition-colors duration-300"
+              href="https://linkedin.com/in/tu-perfil"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
-              <FaLinkedin />
+              <FaLinkedin size={24} />
             </a>
             <a
-              className="text-white hover:text-fuchsia-800 transition-all duration-150 ease-in-out"
-              href=""
+              className="text-white hover:text-fuchsia-500 transition-colors duration-300"
+              href="https://wa.me/1164609581"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
             >
-              <FaWhatsapp />
+              <FaWhatsapp size={24} />
             </a>
             <a
-              className="text-white hover:text-fuchsia-800 transition-all duration-150 ease-in-out"
-              href=""
+              className="text-white hover:text-fuchsia-500 transition-colors duration-300"
+              href="mailto:mdonattiprogramacion@gmail.com"
+              aria-label="Email"
             >
-              <FaVoicemail />
+              <FaVoicemail size={24} />
             </a>
           </div>
         </div>
       </div>
-      <section className="bg-fuchsia-800 text-white text-center lg:px-48 px-2 p-2 mt-6">
+      {/* Footer Bottom */}
+      <section className="bg-fuchsia-800 text-white text-center py-4">
         <h1>
           Desarrollado por <strong>Micaela Donatti</strong>
         </h1>
