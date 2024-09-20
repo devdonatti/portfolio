@@ -68,13 +68,21 @@ const SobreMi = () => {
       </div>
 
       {showWidget && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4 md:p-0">
           <div
             ref={widgetRef}
-            className="bg-white p-6 rounded-lg shadow-lg text-black w-auto min-h-screen"
+            className="bg-fuchsia-500 p-6 rounded-lg shadow-lg text-black max-w-lg w-full h-[400px] md:h-auto overflow-y-auto relative"
           >
-            <div className="flex justify-between">
-              <div className="flex flex-col">
+            {/* Botón de cierre para pantallas pequeñas */}
+            <button
+              onClick={() => setShowWidget(false)}
+              className="absolute top-2 right-2 bg-fuchsia-600 text-white rounded-full p-2 hover:bg-fuchsia-800"
+            >
+              &times;
+            </button>
+
+            <div className="flex flex-col md:flex-row justify-between">
+              <div className="flex flex-col mb-4 md:mb-0 md:w-1/2">
                 <h2 className="text-2xl font-semibold mb-4">
                   Mis Certificaciones
                 </h2>
@@ -87,27 +95,26 @@ const SobreMi = () => {
                   <img
                     src="/certificados/diplomaDW.png"
                     alt="Certificación 1"
-                    className="w-64 h-64 object-cover m-2"
+                    className="w-full md:w-64 h-auto object-cover m-2"
                   />
                   <img
                     src="/certificados/diplomaJS.png"
                     alt="Certificación 2"
-                    className="w-64 h-64 object-cover m-2"
+                    className="w-full md:w-64 h-auto object-cover m-2"
                   />
                 </div>
               </div>
 
-              {/* Contenedor de experiencia */}
-              <div className="flex flex-col">
+              <div className="flex flex-col md:w-1/2">
                 <h2 className="text-2xl font-semibold mb-4">Experiencia</h2>
                 <ul className="list-disc list-inside mb-4">
-                  <li>Participacion de simulacion laboral en NoCountry</li>
+                  <li>Participación en simulación laboral en NoCountry</li>
                 </ul>
                 <h3 className="mt-4 font-semibold">Certificados:</h3>
                 <img
                   src="/certificados/nocountry.jpg"
                   alt="Certificación 2"
-                  className="w-64 h-64 object-cover m-2"
+                  className="w-full md:w-64 h-auto object-cover m-2"
                 />
               </div>
             </div>

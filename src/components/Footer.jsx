@@ -54,7 +54,7 @@ const Footer = () => {
             </a>
             <a
               className="text-white hover:text-fuchsia-500 transition-colors duration-300"
-              href="https://linkedin.com/in/tu-perfil"
+              href="https://www.linkedin.com/in/devdonatti/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

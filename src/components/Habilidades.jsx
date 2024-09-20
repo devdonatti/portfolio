@@ -5,7 +5,7 @@ const habilidades = [
   { src: "/css.png", alt: "CSS", title: "CSS" },
   { src: "/java3.png", alt: "Javascript", title: "JavaScript" },
   { src: "/react2.png", alt: "React", title: "React" },
-  { src: "/tailwind.png", alt: "Tailwind", title: "Tailwind CSS" },
+  { src: "/tailwind3.png", alt: "Tailwind", title: "Tailwind CSS" },
 ];
 
 const Habilidades = () => {
@@ -22,7 +22,7 @@ const Habilidades = () => {
           <div
             key={index}
             data-aos="fade-up"
-            className="flex flex-col items-center justify-center p-4 transition-transform transform hover:scale-105 w-64"
+            className="flex flex-col items-center justify-center p-4 transition-transform transform hover:scale-105 w-32"
           >
             <div className="flex items-center justify-center w-64 h-64 mb-4 overflow-hidden">
               <img
