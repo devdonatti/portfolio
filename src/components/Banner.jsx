@@ -1,10 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { AiFillGithub } from "react-icons/ai";
-import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+  FaDownload,
+} from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Banner = () => {
+  const [showPdf, setShowPdf] = useState(false);
+
   useEffect(() => {
     AOS.init({
       easing: "ease-out-quart",
@@ -12,6 +19,14 @@ const Banner = () => {
       duration: 750,
     });
   }, []);
+
+  const handleShowPdf = () => {
+    setShowPdf(true);
+  };
+
+  const handleClosePdf = () => {
+    setShowPdf(false);
+  };
 
   return (
     <div className="px-4 lg:px-20 py-20 flex flex-col lg:flex-row justify-between items-center min-h-screen">
@@ -41,6 +56,14 @@ const Banner = () => {
           >
             <FaLinkedin className="text-3xl lg:text-4xl" />
           </a>
+          <button
+            onClick={handleShowPdf}
+            title="Ver CV"
+            className="text-fuchsia-600 hover:text-fuchsia-500 rounded-full glow p-2"
+          >
+            <FaDownload className="text-3xl lg:text-4xl" />
+          </button>
+
           <a
             href="#"
             className="text-fuchsia-600 hover:text-fuchsia-500 rounded-full glow p-2"
@@ -63,6 +86,32 @@ const Banner = () => {
         className="lg:w-1/3 w-2/3 max-w-full h-auto m-4"
         alt="Logo"
       />
+
+      {showPdf && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg">
+            <button
+              onClick={handleClosePdf}
+              className="absolute top-2 right-2 font-bold bg-white p-2 text-fuchsia-700"
+            >
+              X
+            </button>
+            <iframe
+              src="cv.pdf" // URL del archivo PDF
+              width="100%"
+              height="500px"
+              title="CV"
+            />
+            <a
+              href="cv.pdf"
+              download
+              className="mt-4 block text-center text-fuchsia-600"
+            >
+              Descargar CV
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

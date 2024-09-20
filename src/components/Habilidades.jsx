@@ -24,7 +24,7 @@ const Habilidades = () => {
             data-aos="fade-up"
             className="flex flex-col items-center justify-center p-4 transition-transform transform hover:scale-105 w-32"
           >
-            <div className="flex items-center justify-center w-64 h-64 mb-4 overflow-hidden">
+            <div className="flex items-center justify-center w-60 h-60 mb-4 overflow-hidden">
               <img
                 src={habilidad.src}
                 alt={habilidad.alt}
