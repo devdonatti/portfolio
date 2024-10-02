@@ -4,11 +4,11 @@ const Contacto = () => {
   return (
     <div
       id="Contacto"
-      className="p-4 lg:p-20 flex flex-col items-center justify-center"
+      className="p-4 lg:p-20 flex flex-col items-center justify-center bg-gradient-to-r from-slate-800 to-purple-500"
     >
       <h1
         data-aos="fade-left"
-        className="text-4xl lg:text-5xl font-semibold mb-6 leading-normal font-mono text-fuchsia-600"
+        className="text-6xl font-raleway  mb-8 p-4 leading-normal uppercase text-fuchsia-600"
       >
         Contactame
       </h1>

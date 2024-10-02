@@ -5,11 +5,11 @@ const Proyectos = () => {
   return (
     <div
       id="Proyectos"
-      className="p-5 md:p-20 flex flex-col items-center justify-center"
+      className="p-5 md:p-20 flex flex-col items-center justify-center bg-gradient-to-r from-slate-800 to-purple-500"
     >
       <h1
         data-aos="fade-right"
-        className="text-4xl md:text-6xl font-semibold mb-8 p-4 leading-tight font-mono uppercase text-fuchsia-600"
+        className="text-6xl font-raleway  mb-8 p-4 leading-normal uppercase text-fuchsia-600"
       >
         Proyectos
       </h1>
@@ -53,7 +53,7 @@ const Proyectos = () => {
           },
         ].map((proyecto, index) => (
           <div key={index} className="flex flex-col items-center">
-            <h2 className="p-2 text-center leading-tight font-mono uppercase">
+            <h2 className="p-2 text-center leading-tight font-raleway uppercase">
               {proyecto.title}
             </h2>
             <img
@@ -62,7 +62,7 @@ const Proyectos = () => {
               src={proyecto.imgSrc}
               alt={proyecto.title}
             />
-            <div className="flex gap-4 justify-center p-2 leading-tight font-mono uppercase">
+            <div className="flex gap-4 justify-center p-2 leading-tight font-raleway uppercase">
               <Link target="_blank" to={proyecto.detailsLink}>
                 Detalles |
               </Link>
@@ -79,12 +79,12 @@ const Proyectos = () => {
       </div>
       <h1
         data-aos="fade-right"
-        className="text-4xl md:text-6xl font-semibold mb-8 p-4 leading-tight font-mono uppercase text-fuchsia-600"
+        className="text-6xl font-raleway  mb-8 p-4 leading-normal uppercase text-fuchsia-600"
       >
         Colaboraciones
       </h1>
       <div className="flex flex-col items-center">
-        <h2 className="p-2 text-center leading-tight font-mono uppercase text-white">
+        <h2 className="p-2 text-center leading-tight font-raleway uppercase text-white">
           Ecommerce Libros Infantiles
         </h2>
         <img
@@ -93,7 +93,7 @@ const Proyectos = () => {
           src="/vista-app-libros.png"
           alt="Ecommerce Libros Infantiles"
         />
-        <div className="flex gap-4 justify-center p-2 leading-tight font-mono uppercase text-white">
+        <div className="flex gap-4 justify-center p-2 leading-tight font-raleway uppercase text-white">
           <Link to="/detalles/7">Detalles |</Link>
           <a
             target="_blank"

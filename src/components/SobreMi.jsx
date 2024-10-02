@@ -28,7 +28,7 @@ const SobreMi = () => {
   return (
     <div
       id="SobreMi"
-      className="lg:px-56 px-10 lg:py-0 py-20 text center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center"
+      className="lg:px-56 px-10 lg:py-0 py-20 text center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center bg-gradient-to-r from-slate-800 to-purple-500"
     >
       <img
         data-aos="fade-down"
@@ -41,20 +41,23 @@ const SobreMi = () => {
       <div className="h-full lg:py-40 flex-col justify-center lg:items-start items-center text-white">
         <h1
           data-aos="fade-right"
-          className="text-6xl font-mono font-semibold mb-8 p-4 leading-normal uppercase text-fuchsia-600"
+          className="text-6xl font-raleway  mb-8 p-4 leading-normal uppercase text-fuchsia-600"
         >
           Sobre Mi
         </h1>
-        <p className="font-mono" data-aos="fade-left">
-          Hola, soy Micaela Donatti, una desarrolladora frontend junior de 25
-          años, nacida en Buenos Aires, Argentina. Desde chica, siempre he
-          tenido una gran pasión por la tecnología y el diseño. Me encanta crear
-          experiencias interactivas y visualmente atractivas que ayuden a los
-          usuarios a navegar de manera intuitiva. He desarrollado habilidades en
-          tecnologías como HTML, CSS, JavaScript, ReactJS y Tailwind CSS. Estoy
-          siempre en busca de nuevos desafíos que me permitan crecer
-          profesionalmente.
+        <p className="font-raleway text-xl leading-loose" data-aos="fade-left">
+          Soy una desarrolladora Frontend de 25 años, nacida en Buenos Aires,
+          Argentina. <br />
+          Desde chica, siempre tuve una gran pasión por la tecnología y el
+          diseño. <b />
+          Me encanta crear experiencias interactivas, visualmente atractivas que
+          ayuden a los usuarios a navegar de manera intuitiva. He desarrollado
+          habilidades en tecnologías como HTML, CSS, JavaScript, ReactJS,
+          Tailwind CSS, Git, para la creacion de productos web. <br />
+          Estoy siempre en busca de nuevos conocimientos y desafíos que me
+          permitan crecer profesionalmente.
         </p>
+
         <div className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
             <button

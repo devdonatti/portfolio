@@ -12,9 +12,9 @@ const Habilidades = () => {
   return (
     <div
       id="Habilidades"
-      className="p-5 m-0 flex flex-col items-center min-h-screen"
+      className="p-5 m-0 flex flex-col items-center min-h-screen bg-gradient-to-r from-slate-800 to-purple-500"
     >
-      <h2 className="text-6xl font-semibold mb-8 text-fuchsia-600 p-4 leading-tight font-mono uppercase">
+      <h2 className="text-6xl font-raleway  mb-8 p-4 leading-normal uppercase text-fuchsia-600">
         Habilidades
       </h2>
       <div className="flex flex-wrap justify-center gap-10">
@@ -31,7 +31,7 @@ const Habilidades = () => {
                 className="object-cover w-full h-full"
               />
             </div>
-            <h3 className="text-xl font-semibold text-white p-4 leading-tight font-mono uppercase">
+            <h3 className="text-xl font-semibold text-white p-4 leading-tight font-raleway uppercase">
               {habilidad.title}
             </h3>
           </div>

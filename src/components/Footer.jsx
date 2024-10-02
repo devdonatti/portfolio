@@ -3,18 +3,18 @@ import { FaGithub, FaLinkedin, FaVoicemail, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-800 text-white">
+    <footer className="bg-slate-800 text-white bg-gradient-to-r from-slate-900 to-purple-600 shadow-xl">
       <div className="container mx-auto lg:px-24 px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo */}
         <div className="mb-4 md:mb-0 flex items-center">
-          <img src="/logo4.png" className="h-24 w-auto" alt="Logo" />
+          <img src="/logo021.png" className="h-24 w-auto" alt="Logo" />
         </div>
         {/* Servicios */}
         <div>
-          <h2 className="text-lg font-semibold text-fuchsia-600 py-2 uppercase">
+          <h2 className="text-lg font-semibold font-raleway text-fuchsia-600 py-2 uppercase">
             Servicios
           </h2>
-          <ul className="space-y-2">
+          <ul className="space-y-2 font-raleway">
             <li>Desarrollo Web</li>
             <li>Diseño Web</li>
             <li>E-commerce</li>
@@ -23,19 +23,19 @@ const Footer = () => {
         </div>
         {/* Contacto */}
         <div>
-          <h2 className="text-lg font-semibold text-fuchsia-600 py-2 uppercase">
+          <h2 className="text-lg font-semibold text-fuchsia-600 py-2 uppercase font-raleway">
             Contacto
           </h2>
-          <p className="text-sm my-2">
-            Email:{" "}
+          <p className="text-sm my-2 font-raleway">
+            EMAIL:{" "}
             <a
               href="mailto:mdonattiprogramacion@gmail.com"
-              className="hover:underline"
+              className="hover:underline font-raleway"
             >
               mdonattiprogramacion@gmail.com
             </a>
           </p>
-          <p className="text-sm my-2">Teléfono: 116460-9581</p>
+          <p className="text-sm my-2 font-raleway">TELÉFONO: 116460-9581</p>
         </div>
         {/* Redes Sociales */}
         <div>
@@ -81,8 +81,8 @@ const Footer = () => {
         </div>
       </div>
       {/* Footer Bottom */}
-      <section className="bg-fuchsia-800 text-white text-center py-4">
-        <h1>
+      <section className="bg-fuchsia-800 text-white text-center py-4 bg-gradient-to-r from-slate-800 ">
+        <h1 className="font-raleway">
           Desarrollado por <strong>Micaela Donatti</strong>
         </h1>
       </section>

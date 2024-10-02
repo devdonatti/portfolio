@@ -13,10 +13,10 @@ const Navbar = () => {
   };
 
   const content = (
-    <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
-      <ul className="text-center text-xl p-4">
+    <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition ">
+      <ul className="text-center text-xl p-4 font-raleway">
         <ScrollLink spy={true} smooth={true} to="Home">
-          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded font-raleway">
             Home
           </li>
         </ScrollLink>
@@ -45,13 +45,13 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="bg-slate-900 fixed top-0 left-0 w-full">
-      <div className="h-16 flex items-center justify-between z-50 text-white lg:py-5 px-6 border-b border-slate-800">
+    <nav className="bg-slate-900 bg-opacity-70 fixed top-0 left-0 w-full">
+      <div className="h-16 flex items-center justify-between z-50 text-white lg:py-5 px-6 border-b border-slate-800 font-raleway">
         <RouterLink to="/" className="flex items-center">
           <img
-            src="/logo4.png"
+            src="/logo021.png"
             alt="Logo"
-            className="h-12 lg:h-16 object-contain" // Ajusta la altura según el diseño
+            className="h-12 lg:h-12 object-contain rounded-full" // Ajusta la altura según el diseño
           />
         </RouterLink>
         <div className="lg:flex hidden items-center">
