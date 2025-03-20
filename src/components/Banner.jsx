@@ -42,7 +42,7 @@ const Banner = () => {
               <span className="text-white">Soy</span> Micaela Donatti
             </h2>
             <span className="text-white text-4xl lg:text-5xl font-raleway ">
-              Desarrolladora web Front-end
+              Desarrolladora web Full Stack
             </span>
           </h1>
 

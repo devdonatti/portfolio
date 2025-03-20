@@ -46,16 +46,14 @@ const SobreMi = () => {
           Sobre Mi
         </h1>
         <p className="font-raleway text-xl leading-loose" data-aos="fade-left">
-          Soy una desarrolladora Frontend de 25 años, nacida en Buenos Aires,
-          Argentina. <br />
-          Desde chica, siempre tuve una gran pasión por la tecnología y el
-          diseño. <b />
-          Me encanta crear experiencias interactivas, visualmente atractivas que
-          ayuden a los usuarios a navegar de manera intuitiva. He desarrollado
-          habilidades en tecnologías como HTML, CSS, JavaScript, ReactJS,
-          Tailwind CSS, Git, para la creacion de productos web. <br />
-          Estoy siempre en busca de nuevos conocimientos y desafíos que me
-          permitan crecer profesionalmente.
+          Soy una desarrollador web de 25 años que vive en la ciudad de Buenos
+          Aires Argentina. <br /> Desde chica, la tecnología y el diseño me
+          apasionaron, y hoy combino ambas para crear experiencias interactivas
+          y visualmente atractivas. Me especializo en HTML, CSS, JavaScript,
+          React.js, Tailwind CSS ,Firebase, Node.js y Git para el control de
+          versiones, estas son herramientas con las que desarrollo productos web
+          intuitivos y funcionales. Siempre estoy en busca de nuevos desafíos y
+          oportunidades para seguir creciendo profesionalmente.
         </p>
 
         <div className="flex mt-8 gap-2">

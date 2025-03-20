@@ -81,6 +81,32 @@ const Proyectos = () => {
         data-aos="fade-right"
         className="text-6xl font-raleway  mb-8 p-4 leading-normal uppercase text-fuchsia-600"
       >
+        Experiencia laboral
+      </h1>
+      <div className="flex flex-col items-center">
+        <h2 className="p-2 text-center leading-tight font-raleway uppercase text-white">
+          Tienda online Smile
+        </h2>
+        <img
+          data-aos="fade-down"
+          className="w-full h-auto max-w-xs md:max-w-sm lg:max-w-md border-2 border-fuchsia-800 b_glow"
+          src="/vistasmile.png"
+          alt="Ecommerce Libros Infantiles"
+        />
+        <div className="flex gap-4 justify-center p-2 leading-tight font-raleway uppercase text-white">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://ecommerce-smile-vercel-mw1z-front.vercel.app"
+          >
+            Ver página
+          </a>
+        </div>
+      </div>
+      <h1
+        data-aos="fade-right"
+        className="text-6xl font-raleway  mb-8 p-4 leading-normal uppercase text-fuchsia-600"
+      >
         Colaboraciones
       </h1>
       <div className="flex flex-col items-center">

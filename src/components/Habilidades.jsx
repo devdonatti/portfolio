@@ -6,6 +6,8 @@ const habilidades = [
   { src: "/java3.png", alt: "Javascript", title: "JavaScript" },
   { src: "/react2.png", alt: "React", title: "React" },
   { src: "/tailwind3.png", alt: "Tailwind", title: "Tailwind CSS" },
+  { src: "/firebase.png", alt: "Tailwind", title: "Firebase" },
+  { src: "/node.png", alt: "Tailwind", title: "Node.js" },
 ];
 
 const Habilidades = () => {
