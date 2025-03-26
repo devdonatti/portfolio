@@ -39,7 +39,7 @@ const Contacto = () => {
       id="Contacto"
       className="p-4 lg:p-20 flex flex-col items-center justify-center bg-gradient-to-r from-slate-800 to-purple-500"
     >
-      <h1 className="text-6xl font-raleway mb-8 p-4 leading-normal uppercase text-fuchsia-600">
+      <h1 className="text-5xl font-raleway mb-8 p-4 leading-normal uppercase text-fuchsia-600">
         Contáctame
       </h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-2 lg:w-1/2">

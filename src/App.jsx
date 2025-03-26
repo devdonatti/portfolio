@@ -14,7 +14,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div className="bg-slate-700 min-h-screen">
+      <div className="bg-slate-700 min-h-screen overflow-x-hidden w-full">
         <Navbar />
 
         <Routes>
