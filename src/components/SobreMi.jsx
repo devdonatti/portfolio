@@ -46,7 +46,7 @@ const SobreMi = () => {
           Sobre Mi
         </h1>
         <p className="font-raleway text-xl leading-loose" data-aos="fade-left">
-          Soy una desarrollador web de 25 años que vive en la ciudad de Buenos
+          Soy una desarrolladora web de 25 años que vive en la ciudad de Buenos
           Aires Argentina. <br /> Desde chica, la tecnología y el diseño me
           apasionaron, y hoy combino ambas para crear experiencias interactivas
           y visualmente atractivas. Me especializo en HTML, CSS, JavaScript,

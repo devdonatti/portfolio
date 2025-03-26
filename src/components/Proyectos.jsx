@@ -105,9 +105,9 @@ const Proyectos = () => {
       </div>
       <h1
         data-aos="fade-right"
-        className="text-6xl font-raleway  mb-8 p-4 leading-normal uppercase text-fuchsia-600"
+        className="text-5xl font-raleway  mb-8 p-4 leading-normal uppercase text-fuchsia-600"
       >
-        Colaboraciones
+        Colaboración
       </h1>
       <div className="flex flex-col items-center">
         <h2 className="p-2 text-center leading-tight font-raleway uppercase text-white">
