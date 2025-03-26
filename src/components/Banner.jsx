@@ -70,7 +70,7 @@ const Banner = () => {
             </button>
 
             <a
-              href="#"
+              href="https://www.instagram.com/desarrollo.mdev"
               className="text-fuchsia-600 hover:text-fuchsia-500 rounded-full glow p-2"
             >
               <FaInstagram className="text-3xl lg:text-7xl" />
