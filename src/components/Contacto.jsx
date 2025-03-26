@@ -1,42 +1,78 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contacto = () => {
+  const [formData, setFormData] = useState({
+    nombre: "",
+    email: "",
+    mensaje: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_4lav619", // Reemplázalo con tu Service ID
+        "template_5ka34r2", // Reemplázalo con tu Template ID
+        formData,
+        "j_9tTIXVW-h70zlEw" // Reemplázalo con tu Public Key
+      )
+      .then(
+        (response) => {
+          alert("Mensaje enviado con éxito");
+          setFormData({ nombre: "", email: "", mensaje: "" });
+        },
+        (error) => {
+          alert("Error al enviar el mensaje");
+          console.error("Error:", error);
+        }
+      );
+  };
+
   return (
     <div
       id="Contacto"
       className="p-4 lg:p-20 flex flex-col items-center justify-center bg-gradient-to-r from-slate-800 to-purple-500"
     >
-      <h1
-        data-aos="fade-left"
-        className="text-6xl font-raleway  mb-8 p-4 leading-normal uppercase text-fuchsia-600"
-      >
-        Contactame
+      <h1 className="text-6xl font-raleway mb-8 p-4 leading-normal uppercase text-fuchsia-600">
+        Contáctame
       </h1>
-      <form action="" className="flex flex-col gap-2 lg:w-1/2">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-2 lg:w-1/2">
         <div className="lg:flex gap-9">
           <input
-            className="w-full lg:my-3 my-4 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-slate-500"
+            name="nombre"
+            value={formData.nombre}
+            onChange={handleChange}
+            className="w-full lg:my-3 my-4 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 text-xl text-slate-500"
             placeholder="Nombre"
             type="text"
+            required
           />
           <input
-            className="w-full lg:my-3 my-4 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-slate-500"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full lg:my-3 my-4 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 text-xl text-slate-500"
             placeholder="Email"
             type="email"
+            required
           />
         </div>
         <textarea
-          className="w-full my-3 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-slate-500"
+          name="mensaje"
+          value={formData.mensaje}
+          onChange={handleChange}
+          className="w-full my-3 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 text-xl text-slate-500"
           placeholder="Escribe tu mensaje..."
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-        ></textarea>
-        <button
-          className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 border-fuchsia-800 bg-fuchsia-800 hover:bg-slate-900 rounded-lg py-4 px-8 my-6 uppercase relative overflow-hidden b_glow text-xl text-bold mb-4"
-          type="submit"
-        >
+          rows="5"
+          required
+        />
+        <button className="shadow-xl hover:shadow-fuchsia-800 text-white border-2 border-fuchsia-800 bg-fuchsia-800 hover:bg-slate-900 rounded-lg py-4 px-8 my-6 uppercase text-xl font-bold">
           Enviar
         </button>
       </form>
